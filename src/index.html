@@ -1,0 +1,123 @@
+<html>
+
+<body>
+  <div id="container">
+    <div id="navcontainer">
+      <nav id="navbar">
+        <header>
+          <ul id="nav-bar">
+            <li><a href="#Welcome_to_C_Prog" class="nav-link">Welcome to C Prog</a></li>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+            <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+            <li><a href="#If_Else_Statements" class="nav-link">If Else Statements</a>
+</li>
+          </ul>
+        </header>
+      </nav>
+    </div>
+    <main id="main-doc">
+      <div id="Welcome">
+        <section id="Welcome_to_C_Prog" class="main-section">
+          <header>
+            <h2>Welcome to C Prog</h2>
+          </header>
+
+          <p>Hi, welcome to my C programminng page. Here you can learn about what possibilities this language contains.</p>
+          <div class="boxed"><code>printf("Hello, World!");</code></div>
+          <p>Most importantly, I would like to mention that the C language is the foundation of languages like C# and C++.</p>
+
+        </section>
+      </div>
+      <div id="Introduction">
+        <section id="Introduction" class="main-section">
+          <header>
+            <h2>Introduction</h2>
+          </header>
+
+          <p>The C language is not a hard one to learn, however, it teaches core fundamentals to the new programmer.</p>
+          <ul>
+            <li>Variables</li>
+            <li>Functions</li>
+            <li>Input & Output</li>
+            <li>Clean code</li>
+            <li>Pointers</li>
+        </section>
+      </div>
+      <div id="Func">
+        <section id="Functions" class="main-section">
+          <header>
+            <h2>Functions</h2>
+          </header>
+          <p>C functions aren't as simple as some think. The way a beginner programmer would make one is by creating it inside<br> of the main function of the program, however this isn't the most proper way to do it.</p>
+          <p>The way to create a proper function is by making it outside of the main function, then calling it into the main function.<br>The first way this is done is via <b>"Call by Value"</b>. This way takes the intial value and makes copies of it but
+            does not
+            <br>overall change that value.<br></p>
+          <div class="boxed"><code>/* function definition to swap the values */<br>
+void swap(int x, int y)<br> {
+   int temp;<br>
+   temp = x; /* save the value of x */<br>
+   x = y;    /* put y into x */<br>
+   y = temp; /* put temp into y */<br> 
+   return;
+          }</code></div>
+          <p>After <b>"Call by Value"</b> The other important method for functions is call by reference. <b>"Call by Reference"</b> takes the original<br>value, and modifies it instead of making a copy. This is generally the harder action to perform and
+            is not used as much as<br><b>"Call by Value"</b>. You will notice the use of the <b>"*"</b>. This is used to reference which variables need to be ran through the function.</p>
+          <div class="boxed"><code>/* function definition to swap the values */<br>
+void swap(int *x, int *y)<br> {
+   int temp;<br>
+   temp = *x;  /* save the value at address x */<br>
+   *x = *y;      /* put y into x */<br>
+   *y = temp;    /* put temp into y */<br>
+  
+   return;
+}</code></div>
+        </section>
+      </div>
+      <div id="Arrays">
+        <section id="Arrays" class="main-section">
+          <header>
+            <h2>Arrays</h2>
+          </header>
+          <p>A huge role in almost all programming languages including C, arrays are a piece of programming everyone should learn.</p>
+          <div class="boxed"><code>type arrayName [ arraySize ];
+</code></div>
+          <p>An array is a kind of data structure that can store a fixed-size sequential collection of elements of the same type. Its used <br>to store a collection of data, but it is often more useful to think of an array as a collection of variables of
+            the same type.<br>The output of an array will typically look like a list, and will usually start at 0.</p>
+          <div class="boxed"><code>
+            Element[0] = 100<br> Element[1] = 101<br> Element[2] = 102<br> Element[3] = 103<br> Element[4] = 104<br> Element[5] = 105<br> Element[6] = 106<br> Element[7] = 107<br> Element[8] = 108<br> Element[9] = 109</code></div>
+        </section>
+      </div>
+      <div id="IfElse">
+        <section id="If_Else_Statements" class="main-section">
+          <header>
+            <h2>If Else Statements</h2>
+          </header>
+          <p>If else statements open up alot of doors to give programs logic. Logic lets programmers keep their programs from making <br>errors as well as opening up other options for users to make.<br></p>
+          <div class="boxed"><code>if(boolean_expression) { <br>
+   /* statement(s) will execute if the boolean expression is true */
+<br>} <br>else {
+   /* statement(s) will execute if the boolean expression is false */
+<br>}</code></div>
+          <p>The <b>"If Else"</b> statement is seen in every other language in their own form of the function. withouht it, programs would have<br> many holes and issues.</p>
+          <div class="boxed"><code>/* local variable definition */<br>
+   int a = 100;<br>
+   /* check the boolean condition */<br>
+   if( a < 20 ) {
+      <br>/* if condition is true then print the following */
+      printf("a is less than 20\n" );<br>
+   } else {<br>
+      /* if condition is false then print the following */<br>
+      printf("a is not less than 20\n" );
+   }
+   
+   <br>printf("value of a is : %d\n", a);
+ 
+            <br> return 0;</code></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
